@@ -1,0 +1,39 @@
+{
+	"cow1": {
+		"name": "bessie",
+		"breed": "Jersey",
+		"weight": 30,
+		"location": "NSS"
+	},
+	"cow2": {
+		"name": "Sozzie",
+		"breed": "Jersey",
+		"weight": 3000,
+		"location": "Green Hills Mall"
+	},
+	"cow3": {
+		"name": "Steak",
+		"breed": "Angus",
+		"weight": 500000,
+		"location": "NSS"
+	},
+	"cow4": {
+		"name": "bob",
+		"breed": "Angus",
+		"weight": 40000,
+		"location": "Green Hills Mall"
+	},
+	"cow5": {
+		"name": "poppie",
+		"breed": "Jersey",
+		"weight": 30100,
+		"location": "NSS"
+	}
+
+
+
+
+
+
+
+}
