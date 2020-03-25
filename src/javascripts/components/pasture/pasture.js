@@ -1,6 +1,18 @@
 import cowData from '../../helpers/data/cowData';
-import util from '../../helpers/utils';
+import smashData from '../../helpers/data/smash';
+import utils from '../../helpers/utils';
 import cowComponent from '../cow/cows';
+
+const removeCow = (e) => {
+  const cowId = e.target.closest('.card').id;
+  smashData.completelyRemoveCow(cowId)
+    .then(() => {
+      // eslint-disable-next-line no-use-before-define
+      buildCows();
+      utils.printToDom('single-farmer', '');
+    })
+    .catch((err) => console.error('could not delete cow', err));
+};
 
 const buildCows = () => {
   cowData.getCows()
@@ -12,7 +24,8 @@ const buildCows = () => {
         domString += cowComponent.cowMaker(cow);
       });
       domString += '</div>';
-      util.printToDom('pasture', domString);
+      utils.printToDom('pasture', domString);
+      $('body').on('click', '.delete-cow', removeCow);
     })
     .catch((err) => console.error('get cows broke', err));
 };
