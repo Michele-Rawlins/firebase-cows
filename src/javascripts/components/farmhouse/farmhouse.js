@@ -1,6 +1,6 @@
 import farmerData from '../../helpers/data/farmerData';
 import farmerComponent from '../farmer/farmer';
-import singleFarmer from '../singleFarmer/singleFarmer';
+import singleFarmer from '../singlefarmer/singlefarmer';
 import utils from '../../helpers/utils';
 
 const buildFarmers = () => {
